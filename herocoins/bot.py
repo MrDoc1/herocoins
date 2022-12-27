@@ -31,7 +31,7 @@ tree = app_commands.CommandTree(bot)
 
 #Sets the current quest for inactive challengers to "None" 
 @tasks.loop(minutes=30)
-def clear_inactives():
+async def clear_inactives():
     cu.reset_inactives()
 
 
